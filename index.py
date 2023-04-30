@@ -63,6 +63,8 @@ df['mês_notificacao'] = df['mês_notificacao'].astype(int)
 df['ano_notificacao'] = df['ano_notificacao'].astype(int)
 df['tp_notificacao'] = df['tp_notificacao'].astype(int)
 
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+# server = app.server
 
 # Criando opções pros filtros que virão
 options_month = [{'label': 'Todos os Meses de notificacão', 'value': 0}]
